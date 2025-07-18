@@ -33,7 +33,7 @@ function App() {
       <Routes>
         {!isAuthenticated ? (
           <>
-            <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="/" element={<Login onLogin={handleLogin} />} />
             <Route path="/register" element={<Signup onRegister={handleLogin} />} />
           </>
         ) : (
